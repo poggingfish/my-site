@@ -25,6 +25,11 @@ export function Article(title, date, content){
 export default function Home() {
   return (
     <div>
+    <style>
+        {`body{
+            background: rgb(40, 39, 39);
+        }`}
+    </style>
     <title>Articles</title>
     <div className="flex top-0 left-0 h-10 w-screen m-0 justify-center bg-cyan-600 text-center shadow-lg text-cyan-100">
       <Link href="/" legacyBehavior>

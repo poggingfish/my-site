@@ -9,6 +9,11 @@ function URL(ref, text){
 export default function About(){
     return (
     <div>
+    <style>
+        {`body{
+            background: rgb(40, 39, 39);
+        }`}
+    </style>
     <title>About</title>
     <div className="flex top-0 left-0 h-10 w-screen m-0 justify-center bg-cyan-600 text-center shadow-lg text-cyan-100">
       <Link href="/" legacyBehavior>
@@ -51,7 +56,15 @@ export default function About(){
             <Image className="pr-4" src="/antinft.gif" alt=""></Image>
         </div>
         <div className="flex">
+            <Image className="pr-4" src="/queer.png" alt=""></Image>
             <Image className="pr-4" src="/LocalNetwork.gif" alt=""></Image>
+        </div>
+        <div className="flex">
+            <Image className="pr-4" src="/dablinkie.gif" alt=""></Image>
+            <Image className="pr-4" src="/herobrine.gif" alt=""></Image>
+            <Image className="pr-4" src="/cishets.gif" alt=""></Image>
+            <Image className="pr-4" src="/gayfrogs.gif" alt=""></Image>
+            <a href="http://english-1667323514.spampoison.com"><img src= "http://pics8.inxhost.com/images/sticker.gif" border="0" width="80" height="15"/></a>
         </div>
         </div>
     ))}
