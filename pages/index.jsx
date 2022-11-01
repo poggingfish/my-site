@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from "next/image"
 export function ArticleNoSeperator(title, content){
   return (
     <div>
@@ -36,11 +37,14 @@ export default function Home() {
     </div>
     <p className="pt-5 text-3xl text-center mb-3">Blog posts</p>
     <hr className="mt-4"></hr>
-    {Article("My article!","2022-10-31",(
+
+    {Article("boom","2022-10-31",(
       <div>
-      <p>Hello, this is my first ever blog post on this website. It is just a test blah blah blah blah!</p>
-    </div>
-    ))}
+      <p className="text-center">yippeee</p>
+      <Image className="m-auto" src="/boom.gif" alt=""></Image>
+      </div>
+    ))}    
+
     </div>
     )
 }

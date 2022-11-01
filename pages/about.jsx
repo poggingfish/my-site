@@ -1,5 +1,6 @@
 import { ArticleNoSeperator } from ".";
 import Link from "next/link"
+import Image from "next/image"
 function URL(ref, text){
     return (
         <a href={ref} target="_blank" rel="noreferrer" className="underline text-blue-300 hover:text-blue-200">{text}</a>
@@ -36,6 +37,22 @@ export default function About(){
             {URL("https://tailwindcss.com/","Tailwind CSS")}<br></br>
             {URL("https://nextjs.org/","Next.js")}<br></br>
             {URL("https://nodejs.org/en/","Node.js")}
+        </div>
+    ))}
+    {ArticleNoSeperator("blinkies n' buttons", (
+        <div>
+        <div className="flex max-w-xl">
+            <Image className="pr-4" src="/88x312.gif" alt=""></Image>
+            <Image className="pr-4" src="/computermonitor.gif" alt=""></Image>
+            <Image className="pr-4" src="/webdesign.gif" alt=""></Image>
+            <Image className="pr-4" src="/nft.gif" alt=""></Image>
+            <Image className="pr-4" src="/saynotoweb3.gif" alt=""></Image>
+            <Image className="pr-4" src="/nb.png" alt=""></Image>
+            <Image className="pr-4" src="/antinft.gif" alt=""></Image>
+        </div>
+        <div className="flex">
+            <Image className="pr-4" src="/LocalNetwork.gif" alt=""></Image>
+        </div>
         </div>
     ))}
     </div>
